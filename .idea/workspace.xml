@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab47ce1-f143-433f-9371-4916c3f35f54" name="Default" comment="" />
+    <list default="true" id="5ab47ce1-f143-433f-9371-4916c3f35f54" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/index.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,16 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
-              <folding>
-                <element signature="e#2072#2273#0#HTML" />
-                <element signature="e#2304#2868#0#HTML" />
-                <element signature="e#2930#3023#0#HTML" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="200" column="43" lean-forward="true" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -52,8 +51,8 @@
       <file leaf-file-name="Testt.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/test/Testt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="432">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +63,8 @@
       <file leaf-file-name="TagController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/TagController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="336">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,17 +75,8 @@
       <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="358">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,9 +84,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7e5bd0d0-6f32-4722-8f4d-9055c4f8c338/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="ArticleService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -119,10 +116,15 @@
       <find>&quot;</find>
       <find>jachin</find>
       <find>getTag</find>
+      <find>console</find>
+      <find>`</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -145,10 +147,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jachin/blog/test/Testt.java" />
-        <option value="$PROJECT_DIR$/src/main/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/ArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7e5bd0d0-6f32-4722-8f4d-9055c4f8c338/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/src/main/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -181,7 +183,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="110" />
     <option name="y" value="30" />
     <option name="width" value="1750" />
@@ -192,6 +194,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,14 +276,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,6 +500,7 @@
       <workItem from="1528287875172" duration="4561000" />
       <workItem from="1528331461203" duration="21702000" />
       <workItem from="1528363039980" duration="8105000" />
+      <workItem from="1528382908048" duration="2302000" />
     </task>
     <servers />
   </component>
@@ -502,74 +513,75 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61736000" />
+    <option name="totallyTimeSpent" value="64038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917126" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32872927" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38259667" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38174275" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.42541435" />
+      <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.2660858" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info id="Learn" order="2" weight="0.3297587" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917126" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="8" visible="true" weight="0.42541435" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32872927" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872927" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.38259667" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.42541435" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="15" visible="true" weight="0.42541435" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38174275" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32872927" />
-      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32872927" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
       <window_info id="Learn" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39917126" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917126" />
       <window_info anchor="right" id="Bean Validation" order="7" />
     </layout-to-restore>
   </component>
@@ -588,11 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2472">
           <caret line="103" column="36" lean-forward="true" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
-          <folding>
-            <element signature="e#2072#2273#0#HTML" />
-            <element signature="e#2304#2868#0#HTML" />
-            <element signature="e#2930#3023#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,11 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
           <caret line="48" column="43" lean-forward="true" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-          <folding>
-            <element signature="e#2072#2273#0#HTML" />
-            <element signature="e#2304#2868#0#HTML" />
-            <element signature="e#2930#3023#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,11 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2232">
           <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-          <folding>
-            <element signature="e#2072#2273#0#HTML" />
-            <element signature="e#2304#2868#0#HTML" />
-            <element signature="e#2930#3023#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,11 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1584">
           <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-          <folding>
-            <element signature="e#2072#2273#0#HTML" />
-            <element signature="e#2304#2868#0#HTML" />
-            <element signature="e#2930#3023#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,9 +767,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/static/images/head.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Blog_Web_exploded/WEB-INF/static/images/head.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Blog_Web_exploded/WEB-INF/static/images/head.png" />
     <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/views/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -837,20 +827,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/mapper/TagMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/public/article.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/bean/Msg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -898,8 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/test/Testt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="432">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -908,8 +884,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/TagController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/service/TagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7e5bd0d0-6f32-4722-8f4d-9055c4f8c338/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -918,45 +914,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/service/TagService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="358">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jachin/blog/service/ArticleService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/web/public/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="742">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/public/article.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
-          <folding>
-            <element signature="e#2072#2273#0#HTML" />
-            <element signature="e#2304#2868#0#HTML" />
-            <element signature="e#2930#3023#0#HTML" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="200" column="43" lean-forward="true" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7e5bd0d0-6f32-4722-8f4d-9055c4f8c338/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

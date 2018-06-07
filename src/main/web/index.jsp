@@ -161,7 +161,7 @@
             var name = item.substring(1,this.length);
             var articlePanel = $("<div class='panel panel-default list-panel'></div>");
             var articleBody = $("<div class='panel-body'></div>");
-            var h1 = $("<h1 class='title'></h1>").append(item).attr("id", id).attr("name",name);
+            var h1 = $("<h1 class='title'></h1>").append(name).attr("id", id).attr("name",name);
             var p = $("<p class='intro'></p>").append("Basic panel example Basic panel example");
             articleBody.append(h1).append(p);
             articlePanel.append(articleBody);
@@ -185,23 +185,36 @@
         $.each(years, function (index, year) {
             var div = $("<div class='container content'></div>").append($("<h1 class='year'></h1>").append(year));
             // 根据 id 和年份获取文章
-            var arts = ["aaa","bbb","ccc","ddd"];
-            // $.each(arts, function (index, art) {
-            //     var p = $("<p class='art'></p>").append(art);
-            //     div.append(p);
-            // });
-            Lists(arts,div);
-            $("#Lists").append(div);
+            var art = [];
+            var arts = [];
+            $.ajax({
+                url:"articles.do",
+                data:"tagid="+id + "&year="+year,
+                type:"GET",
+                success:function (result) {
+                    $.each(result.extendInfo.articles, function (index, article) {
+                        art[0] = article.artid;
+                        art[1] = article.title;
+                        art[2] = article.intro;
+                        arts[index] = art;
+                    });
+                    Lists(arts,div);
+                    $("#Lists").append(div);
+                }
+            });
+
         });
     }
 
     // 显示文章列表
     function Lists(arts,ele) {
+        console.log(arts[0][0]);
+
         $.each(arts, function (index, art) {
             var articlePanel = $("<div class='panel panel-default col-md-3 list-panel'></div>");
             var articleBody = $("<div class='panel-body'></div>");
-            var h1 = $("<h2 class='art'></h2>").append("Article " + art).attr("id", art);
-            var intro = $("<p class='intro'></p>").append("这里是文章简介");
+            var h1 = $("<h2 class='art'></h2>").append("Article " + art[1]).attr("id", art[0]);
+            var intro = $("<p class='intro'></p>").append(art[2]);
             articleBody.append(h1).append(intro);
             articlePanel.append(articleBody);
             ele.append(articlePanel);

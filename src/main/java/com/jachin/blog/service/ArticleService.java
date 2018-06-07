@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -17,11 +18,14 @@ public class ArticleService {
 
     private ArticleMapper articleMapper = (ArticleMapper) ioc.getBean("articleMapper");
 
-    public List<Article> getArticles(String kind){
+    public List<Article> getArticles(String kind, String year){
+        List<String> list = new ArrayList<>();
+        list.add(kind);
         ArticleExample articleExample = new ArticleExample();
         ArticleExample.Criteria criteria = articleExample.createCriteria();
-//        criteria.d
-        articleMapper.selectByExample(articleExample);
-        return null;
+        criteria.andTagIn(list);
+        criteria.andYearEqualTo(year);
+        List<Article> articles = articleMapper.selectByExample(articleExample);
+        return articles;
     }
 }
