@@ -38,10 +38,10 @@
             <h1 id="myName" style="color: aliceblue">柒夕影</h1>
             <p>深自缄默</p>
             <%--<p>缘起一个小伙伴的无心之语，便萌发了创建个人站点的念头，于是便有了这个地方。</p>--%>
-            <a href="#" id="p1" class="text list">计算机</a><br>
-            <a href="#" id="p2" class="text list">MineCraft</a><br>
-            <a href="#" id="p3" class="text list">日常随笔</a><br>
-            <a href="#" id="p4" class="text list">相关说明</a><br>
+            <a id="p1" class="text list">计算机</a><br>
+            <a id="p2" class="text list">MineCraft</a><br>
+            <a id="p3" class="text list">日常随笔</a><br>
+            <a id="p4" class="text list">相关说明</a><br>
         </div>
     </div>
 
@@ -178,38 +178,48 @@
          */
 
 
-        $("#Lists").empty();
         // 根据标签 ID 获取的年份
-        var years = ["2018", "2017", "2016"];
-        // 按年份构建列表块
-        $.each(years, function (index, year) {
-            var div = $("<div class='container content'></div>").append($("<h1 class='year'></h1>").append(year));
-            // 根据 id 和年份获取文章
-            var art = [];
-            var arts = [];
-            $.ajax({
-                url:"articles.do",
-                data:"tagid="+id + "&year="+year,
-                type:"GET",
-                success:function (result) {
-                    $.each(result.extendInfo.articles, function (index, article) {
-                        art[0] = article.artid;
-                        art[1] = article.title;
-                        art[2] = article.intro;
-                        arts[index] = art;
-                    });
-                    Lists(arts,div);
-                    $("#Lists").append(div);
-                }
-            });
 
+        $.ajax({
+            url:"years.do",
+            data:"tagid="+id,
+            type:"GET",
+            success:function (result) {
+                $("#Lists").empty();
+
+                var years = result.extendInfo.years;
+                // 按年份构建列表块
+                $.each(years, function (index, year) {
+                    var div = $("<div class='container content'></div>").append($("<h1 class='year'></h1>").append(year));
+                    var arts = [];
+                    // 根据 id 和年份获取文章
+                    $.ajax({
+                        url:"articles.do",
+                        data:"tagid="+id + "&year="+year,
+                        type:"GET",
+                        success:function (result) {
+                            var articles = result.extendInfo.articles;
+                            $.each(articles, function (index, article) {
+                                var art = [];
+                                art[0] = article.artid;
+                                art[1] = article.title;
+                                art[2] = article.intro.substring(0,18);
+                                arts[index] = art;
+                            });
+                            Lists(arts,div);
+                            $("#Lists").append(div);
+                        }
+                    });
+
+                });
+            }
         });
+
+
     }
 
     // 显示文章列表
     function Lists(arts,ele) {
-        console.log(arts[0][0]);
-
         $.each(arts, function (index, art) {
             var articlePanel = $("<div class='panel panel-default col-md-3 list-panel'></div>");
             var articleBody = $("<div class='panel-body'></div>");
@@ -223,22 +233,32 @@
 
     // 显示文章内容
     function buildArt(id){
-        $("#Lists").empty();
         /**
          * h1
          * block-quote
          * p
          */
-        var intro = "something here ";
-        var cont = "<p>singing in the song!</p><p>singing in the song!</p><p>singing in the song!</p>";
+        $.ajax({
+            url:"article.do",
+            data:"articleid="+id,
+            type:"GET",
+            success:function (res) {
+                $("#Lists").empty();
+                var art = res.extendInfo.article;
+                var title = art.title;
+                var intro = art.intro;
+                var cont = art.text;
 
-        var div = $("<div class='artcontent'></div>");
-        var title = $("<h1></h1>").append(id);
-        var quote = $("<blockquote></blockquote>").append(intro);
-        var p = $("<p></p>").append(cont);
+                var div = $("<div class='artcontent'></div>");
+                var title = $("<h1></h1>").append(title);
+                var quote = $("<blockquote></blockquote>").append(intro);
+                var p = $("<p></p>").append(cont);
 
-        div.append(title).append(quote).append(p);
-        $("#Lists").append(div);
+                div.append(title).append(quote).append(p);
+                $("#Lists").append(div);
+            }
+        });
+
     }
 
     // 所有可以点击的 h1 元素

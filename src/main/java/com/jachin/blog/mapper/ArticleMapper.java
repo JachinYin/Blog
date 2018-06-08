@@ -2,8 +2,9 @@ package com.jachin.blog.mapper;
 
 import com.jachin.blog.po.Article;
 import com.jachin.blog.po.ArticleExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface ArticleMapper {
     long countByExample(ArticleExample example);
@@ -17,6 +18,8 @@ public interface ArticleMapper {
     int insertSelective(Article record);
 
     List<Article> selectByExample(ArticleExample example);
+
+    List<String> selectYears(String tagId);
 
     Article selectByPrimaryKey(Integer artid);
 

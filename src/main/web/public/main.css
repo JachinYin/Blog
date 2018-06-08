@@ -51,17 +51,18 @@
 
 #Lists .content{
     display: inline-block;
-    width: auto;
+    width: 100% !important;
 }
 
 .list-panel{
     /*position: fixed;*/
-    margin-top:1%;
-    margin-bottom:1%;
-    margin-right:4%;
-    margin-left:4%;
+    margin:2%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px lightgray;
+    /*width: auto;*/
 }
 .list-panel:hover{
+    border-color: dodgerblue;
     box-shadow: 0 0 20px lightgray;
 }
 
@@ -94,4 +95,3 @@ p{
 .art:hover{
     color: darkgoldenrod;
 }
-

@@ -18,6 +18,13 @@ public class ArticleService {
 
     private ArticleMapper articleMapper = (ArticleMapper) ioc.getBean("articleMapper");
 
+    // 获取所有年份
+    public List<String> getYears(String tagId){
+        List<String> years = articleMapper.selectYears(tagId);
+        return years;
+    }
+
+    // 根据 tagid 和 year 获取文章列表
     public List<Article> getArticles(String kind, String year){
         List<String> list = new ArrayList<>();
         list.add(kind);
@@ -27,5 +34,11 @@ public class ArticleService {
         criteria.andYearEqualTo(year);
         List<Article> articles = articleMapper.selectByExample(articleExample);
         return articles;
+    }
+
+    // 根据文章 id 来获取文章
+    public Article getArticle(int artId){
+        Article article = articleMapper.selectByPrimaryKey(artId);
+        return article;
     }
 }

@@ -20,7 +20,7 @@ public class Testt {
     public void test(){
         Article article = new Article();
 //        article.setTitle();
-        articleMapper.insertSelective(article);
+        System.out.println(articleMapper.selectYears("1"));
     }
 
 }
